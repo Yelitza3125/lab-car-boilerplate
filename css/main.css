@@ -17,7 +17,7 @@
     align-content: center;  
 }
 
-.lab-logo img {
+.lab-logo {
     margin-top: 30%;
     margin-left: 40%;
 }
@@ -25,6 +25,16 @@
 .navbar-right li a{
     color: #000;
 }
+
+/*Hero*/
+
+.lab-hero {
+    margin-top: 5em; ;
+}
+
+
+
+
 
 @media screen and (min-width: 769px) {
     .navbar-collapse {
