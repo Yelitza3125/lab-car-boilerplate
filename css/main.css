@@ -19,7 +19,7 @@
 
 .lab-logo {
     margin-top: 30%;
-    margin-left: 40%;
+    margin-left: 50%;
 }
 
 .navbar-right li a{
@@ -28,16 +28,83 @@
 
 /*Hero*/
 
-.lab-hero {
-    margin-top: 5em; ;
+.taxi{
+    margin-top: 80px;
 }
 
+.taxi-image figure {
+    width: 90%;
+    height: 100vh;
+    background-image: url('../assets/images/taxi.jpg');
+    background-size: cover;
+    display: flex;
+    flex-direction: row-reverse;  
+    align-items: center;
+}
 
+.container-content { 
+    background-color: #ffa914;
+    color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;   
+}
 
+.container-content h1   {
+    margin-bottom: 10%; 
+}
+
+.container-content button {
+    margin-bottom: 10%;
+}
+
+.container-content h1 img {
+    width: 12vh;
+}
 
 
 @media screen and (min-width: 769px) {
     .navbar-collapse {
        margin-top: 4em;
     }
+
+    .taxi{
+        margin-top: 40px;
+    }
+
+    .container-content .trave, .driver {
+        display: block !important;
+    }
+    
+    .container-content {
+       flex-direction: column;
+       justify-content: flex-start;
+    }
+
+    .container-content  h1.start-travel, button.dowload{
+        display: none !important;
+    }
+
+    .container-content h4 img {
+        width: 8vh;
+    } 
+    
+    .driver  {
+       display: flex;
+       flex-direction: row;
+       justify-content: space-between;
+       align-items: center;
+    }
+
+    .driver hr {
+        width:20%;
+    }
+    
+    .taxi-image figure {  
+        height: 80vh; 
+        background-repeat: no-repeat;
+        background-position: 0% 95%;        
+    }
 } 
+
+
