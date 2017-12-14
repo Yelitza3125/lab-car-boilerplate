@@ -1,4 +1,6 @@
 /* Los estilos de tu proyecto */
+
+/*Resetendo el layout */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -6,9 +8,15 @@
 }
 
 
+/*Sección menú */
 
+/*Estilo del menu hamburguesa*/
 .navbar-toggle span {
     background: #000;
+}
+
+.navbar-header button {
+    border: 1px solid grey;  
 }
 
 .nav-flex {
@@ -17,18 +25,22 @@
     align-content: center;  
 }
 
+.navbar-right li a{
+    color: #000;
+}
+
+
+/*Estilo del logo*/
 .lab-logo {
     margin-top: 30%;
     margin-left: 50%;
 }
 
-.navbar-right li a{
-    color: #000;
-}
 
-/*Hero*/
 
-.taxi{
+/*Sección hero*/
+
+.taxi-container{
     margin-top: 80px;
 }
 
@@ -63,47 +75,80 @@
 }
 
 
+/* Media query para dektop */
 @media screen and (min-width: 769px) {
     .navbar-collapse {
        margin-top: 4em;
     }
 
-    .taxi{
+    /*Estilo de la imagen en desktop*/
+
+    .taxi-container{
         margin-top: 40px;
     }
 
-    .container-content .trave, .driver {
+    .taxi-image figure {  
+        height: 80vh; 
+        background-repeat: no-repeat;
+        background-position: 0% 95%;        
+    }
+
+
+    /*Estilo para ocultar el div de mobile */
+    .container-content  h1.start-travel, button.dowload{
+        display: none !important;
+    }
+
+    
+     /*Estilo para que aparezcan los div's*/
+    .container-content .register, .option, .register-driver {
         display: block !important;
     }
     
+    /*Contenedor que aparece en el desktop */
     .container-content {
-       flex-direction: column;
-       justify-content: flex-start;
+        flex-direction: column;
+        justify-content: flex-start;
+     }
+
+
+    /*Estilo del div register */
+    .register h3.last {
+        margin-top: 0;
+        margin-bottom: 1em;
     }
 
-    .container-content  h1.start-travel, button.dowload{
-        display: none !important;
+    .register h3.first {
+        margin-top: 1.5em;
+        margin-bottom: 0;
+    }
+    
+    .register button {
+        margin-top: 1em;
+        margin-bottom: 1em;
+        padding: 0.5em 1em;
     }
 
     .container-content h4 img {
         width: 8vh;
     } 
-    
-    .driver  {
-       display: flex;
-       flex-direction: row;
+     
+
+    /*Estilo del div option */
+    .option  {
+       display: flex !important;
        justify-content: space-between;
        align-items: center;
     }
 
-    .driver hr {
-        width:20%;
+    .option hr {
+        width:25%;
     }
     
-    .taxi-image figure {  
-        height: 80vh; 
-        background-repeat: no-repeat;
-        background-position: 0% 95%;        
+    
+    /*Estilo del div-register-driver */
+    .register-driver button {
+        margin-bottom: 2em;
     }
 } 
 
