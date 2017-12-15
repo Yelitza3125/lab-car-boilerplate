@@ -266,9 +266,66 @@ figure.driver-image {
 
     /*Estilo de la sección driver */
 
-    .third {
+    .become-driver {
         width: 90%;
     }
+
+    /*/* Sección driver */
+
+
+
+figure.driver-image {
+    background-image: url("../assets/images/conduce.jpg");
+    width: 100%;
+    height: 50vh;
+    background-size: cover; 
+    background-position: 65% 50%;
+    display: flex;
+    align-items: center; 
+}
+
+.driver-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    color: #fff;  
+}
+
+.driver-content button {
+  padding: 1em 1.5em;
+  background: #ffa914;
+  color: #fff;
+  border: none;
+}
+
+
+/* Sección driver */
+
+
+
+figure.driver-image {
+    background-image: url("../assets/images/conduce.jpg");
+    width: 100%;
+    height: 50vh;
+    background-size: cover; 
+    background-position: 65% 50%;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.driver-content {
+    background-color: rgba(63, 63, 63, 0.5);
+    height: 50vh;
+    justify-content: center;
+}
+
+.driver-content h4 {
+      padding-left: 0
+}
+
+
+
    
 } 
 
