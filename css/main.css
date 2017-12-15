@@ -185,6 +185,27 @@ figure.driver-image {
     padding: 1.5em;
 }
 
+/* Footer */
+
+.footer-content {
+    background-color: rgb(24, 23, 23);
+    color: #fff;
+    padding-bottom: 1em;
+}
+
+.footer-content img.logo-lab {
+    margin-top: 2em;
+}
+
+.footer-list li{
+    margin-bottom: 1em;
+}
+
+.footer-icons img {
+    margin-top: 2em;
+}
+
+
 
 
 

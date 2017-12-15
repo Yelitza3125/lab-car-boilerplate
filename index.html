@@ -178,15 +178,16 @@
    <footer>
        <div class="container">
            <div class="row">
-               <div class="footer-content">
-                   <img src="assets/images/logoBlanco.png" alt="logo-blanco">
+               <div class="footer-content col-xs-12">
+                   <img  class ="img-responsive logo-lab" src="assets/images/logoBlanco.png" alt="logo-blanco">
                    <hr>
-                   <div class="container">
-                        <div class="row">
-                            <div>
+                   <div class="container col-xs-12">
+                        <div class="row footer-menu">
+                            <div class="footer-list col-xs-3">
                                 <ul class="list-unstyled">
                                     <li>Viaja</li>
                                     <li>Conduce</li>
+                                    <li>Ciudades</li>
                                     <li>Ciudades</li>
                                     <li>Entregas</li>
                                     <li>¿Cómo funciona?</li>
@@ -194,8 +195,24 @@
                                     <li>Seguridad</li>
                                 </ul>
                             </div>
-                            <div>
-                                <ul>
+
+                            <!--lista que no aparece en mobil -->
+                            <div class="row footer-menu2 hidden">
+                                    <div class="footer-list2">
+                                        <ul class="list-unstyled">
+                                            <li>Oportunidades</li>
+                                            <li>Nuestra historia</li>
+                                            <li>API de LabCar</li>
+                                            <li>Eventos</li>
+                                            <li>Desarrolladores</li>
+                                            <li>Servicios</li>
+                                            <li>Laboratoria</li>
+                                            <li>Coders</li>
+                                        </ul>
+                                    </div>
+                            </div>        
+                            <div class="footer-icons col-xs-offset-3 col-xs-4">
+                                <ul class="list-inline">
                                     <li><i class="fa fa-facebook" aria-hidden="true"></i></li>
                                     <li><i class="fa fa-twitter" aria-hidden="true"></i></li>
                                     <li><i class="fa fa-linkedin" aria-hidden="true"></i></li>
@@ -205,11 +222,18 @@
                                 <img src="assets/images/enBadgeWebGeneric.png" alt="Google Play">
                                 <img src="assets/images/appstore.png" alt="app store">
                             </div>
-                            <hr>
-                            <i class="fa fa-copyright" aria-hidden="true"></i>
-                            <span>2017 LabCar technologies Inc.</span>
+                    
                         </div>
                     </div>
+                    <div class="container"> 
+                        <div class="row">
+                            <div class="copyright col-xs-12">  
+                                <hr>
+                                <i class="fa fa-copyright" aria-hidden="true"></i>
+                                <span>2017 LabCar technologies Inc.</span>
+                            </div>  
+                        </div> 
+                    </div>          
                </div>
            </div>
        </div>
