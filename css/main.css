@@ -78,6 +78,7 @@
 /*Estilo de la sección app */
 
 section.app {
+    width: 100%;
     background-color: #ffa914;
 }
 
@@ -107,6 +108,12 @@ section.app {
 .iphone-container h3 {
     margin-top: 1em;
 }
+
+.iphone-content .paragraph-desktop {
+    display: none;
+} 
+
+
 
 
 /* Media query para dektop */
@@ -190,7 +197,46 @@ section.app {
 
     section.app {
         width: 90%;
+        height: 55vh;
     }
+
+    /*Ocultando el contenido de desktop */
+    .iphone-content h1, h3 {
+        display: none !important;
+    }
+
+    /*Mostrando el contenido de desktop */
+    .iphone-content .paragraph-desktop {
+        display: block !important;
+    }
+
+    .iphone-container {
+        padding-left: 0;
+    }
+  
+    .iphone-content {
+        margin-top: 2.5em;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-wrap: nowrap;       
+    }
+
+    .iphone-content img {
+        width: 25%;
+        margin-left: 5%;
+    }
+
+    .paragraph-desktop h2 {
+        margin-left: 2%;
+        margin-bottom: 1em;
+    }
+
+    .paragraph-desktop p {
+        font-size: 1.3em;
+        margin-left: 0;
+        margin-bottom: 1em;
+    }
+   
 } 
 
 
