@@ -143,6 +143,51 @@ figure.driver-image {
 }
 
 
+/* Sección rate */
+
+.rate-container {
+    background-color: #ffa914;
+    color: #fff;
+}
+
+.rate h3 {
+    margin-bottom: 2em;
+}
+
+.routes {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.routes img {
+    margin-right: 1em;
+}
+
+.routes pre {
+    background: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+    font-size: 1.5em;   
+}
+
+.rate-container button {
+    margin-top: 1.5em;
+    text-transform: uppercase;
+    padding: 0.8em 2em;
+}
+
+.rate-container figure {
+    margin-top: 5em;
+    margin-bottom: 4em;
+    border: 1px solid #fff;
+    padding: 1.5em;
+}
+
+
+
+
 /* Media query para dektop */
 @media screen and (min-width: 769px) {
     .navbar-collapse {
@@ -324,7 +369,7 @@ figure.driver-image {
       padding-left: 0
 }
 
-
+/*Estilo de la sección rate */
 
    
 } 
