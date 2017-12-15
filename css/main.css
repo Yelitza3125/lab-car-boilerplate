@@ -273,7 +273,7 @@ figure.driver-image {
     }
 
     /*Ocultando el contenido de desktop */
-    .iphone-content h1, h3 {
+    .iphone-content h1, .iphone-content h3 {
         display: none !important;
     }
 
@@ -371,7 +371,36 @@ figure.driver-image {
 
 /*Estilo de la sección rate */
 
+.rate-section {
+    width: 90%;
+}
+
+.rate-container {
+    height: 60vh;
+    
+}
+.routes {
+    flex-direction: row;
+    justify-content: flex-start;
+}
    
+.routes pre.input-user, figure img.sudamerica-map {
+    display: block !important;
 } 
 
+.routes pre.route-register, .eleven, figure img.destiny-map {
+    display: none !important;
+}
 
+.rate-section figure {
+    width: 20%;
+    padding: 1em;
+}
+
+.rw-flex {
+    display: flex;
+    align-items: flex-start;
+}
+
+
+}
