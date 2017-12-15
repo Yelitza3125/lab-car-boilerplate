@@ -115,6 +115,8 @@ section.app {
 
 /* Sección driver */
 
+
+
 figure.driver-image {
     background-image: url("../assets/images/conduce.jpg");
     width: 100%;
@@ -260,6 +262,12 @@ figure.driver-image {
         font-size: 1.3em;
         margin-left: 0;
         margin-bottom: 1em;
+    }
+
+    /*Estilo de la sección driver */
+
+    .third {
+        width: 90%;
     }
    
 } 
