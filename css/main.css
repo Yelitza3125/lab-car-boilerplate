@@ -109,13 +109,10 @@ section.app {
     margin-top: 1em;
 }
 
-.iphone-content .paragraph-desktop {
-    display: none;
-} 
+
+
 
 /* Sección driver */
-
-
 
 figure.driver-image {
     background-image: url("../assets/images/conduce.jpg");
@@ -133,6 +130,10 @@ figure.driver-image {
     justify-content: flex-start;
     align-items: flex-start;
     color: #fff;  
+}
+
+.driver-content h4 {
+    padding-left: 0;
 }
 
 .driver-content button {
@@ -228,17 +229,6 @@ figure.driver-image {
         background-position: 0% 95%;        
     }
 
-
-    /*Estilo para ocultar el div de mobile */
-    .container-content  h1.start-travel, button.dowload{
-        display: none !important;
-    }
-
-    
-     /*Estilo para que aparezcan los div's*/
-    .container-content .register, .option, .register-driver {
-        display: block !important;
-    }
     
     /*Contenedor que aparece en el desktop */
     .container-content {
@@ -293,15 +283,6 @@ figure.driver-image {
         height: 55vh;
     }
 
-    /*Ocultando el contenido de desktop */
-    .iphone-content h1, .iphone-content h3 {
-        display: none !important;
-    }
-
-    /*Mostrando el contenido de desktop */
-    .iphone-content .paragraph-desktop {
-        display: block !important;
-    }
 
     .iphone-container {
         padding-left: 0;
@@ -336,133 +317,84 @@ figure.driver-image {
         width: 90%;
     }
 
-    /*/* Sección driver */
+    .driver-content button {
+        padding: 1em 1.5em;
+        background: #ffa914;
+        color: #fff;
+        border: none;
+    }
 
 
+    .driver-content {
+        background-color: rgba(63, 63, 63, 0.5);
+        height: 50vh;
+        justify-content: center;
+    }
 
-figure.driver-image {
-    background-image: url("../assets/images/conduce.jpg");
-    width: 100%;
-    height: 50vh;
-    background-size: cover; 
-    background-position: 65% 50%;
-    display: flex;
-    align-items: center; 
-}
+    .driver-content h4 {
+        padding-left: 0
+    }
 
-.driver-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    color: #fff;  
-}
+    /*Estilo de la sección rate */
 
-.driver-content button {
-  padding: 1em 1.5em;
-  background: #ffa914;
-  color: #fff;
-  border: none;
-}
+    .rate-section {
+        width: 90%;
+    }
 
+    .rate-container {
+        height: 60vh; 
+    }
 
-/* Sección driver */
+    .routes {
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+  
 
+    .rate-section figure {
+        width: 20%;
+        padding: 1em;
+    }
 
+    .rw-flex {
+        display: flex;
+        align-items: flex-start;
+    }
 
-figure.driver-image {
-    background-image: url("../assets/images/conduce.jpg");
-    width: 100%;
-    height: 50vh;
-    background-size: cover; 
-    background-position: 65% 50%;
-    display: flex;
-    flex-direction: row-reverse;
-}
+    /*Footer */
 
-.driver-content {
-    background-color: rgba(63, 63, 63, 0.5);
-    height: 50vh;
-    justify-content: center;
-}
+    footer {
+        width: 90%;
+    }
 
-.driver-content h4 {
-      padding-left: 0
-}
-
-/*Estilo de la sección rate */
-
-.rate-section {
-    width: 90%;
-}
-
-.rate-container {
-    height: 60vh;
-    
-}
-.routes {
-    flex-direction: row;
-    justify-content: flex-start;
-}
-   
-.routes pre.input-user, figure img.sudamerica-map {
-    display: block !important;
-} 
-
-.routes pre.route-register, .eleven, figure img.destiny-map {
-    display: none !important;
-}
-
-.rate-section figure {
-    width: 20%;
-    padding: 1em;
-}
-
-.rw-flex {
-    display: flex;
-    align-items: flex-start;
-}
-
-/*Footer */
-
-footer {
-    width: 90%;
-}
-
-.footer-menu2 {
-    display: block !important;
-
-}
-
-
-.footer-list2 li {
-    margin-bottom: 1em;
-}
+    .footer-list2 li {
+        margin-bottom: 1em;
+    }
 
 /*
 .footer-icons {
     margin-left: 10%;
 } */
 
-.footer-icons  img {
-    width: 50%;
-    margin-bottom: 1.5em;
-}
+    .footer-icons  img {
+        width: 50%;
+        margin-bottom: 1.5em;
+    }
 
-.footer-content .hr-1 {
+    .footer-content .hr-1 {
     width: 83%;
-}
+    }   
 
-.footer-menu {
-    display:flex;
-    justify-content: center;
-    align-items: flex-end;  
+    .footer-menu {
+        display:flex;
+        justify-content: center;
+        align-items: flex-end;  
     
-}
+    }
 
-.footer-icons .logo-store {
-    align-self: flex-end;
-}
+    .footer-icons .logo-store {
+        align-self: flex-end;
+    }
 
 
 }
