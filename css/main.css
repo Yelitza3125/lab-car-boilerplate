@@ -241,6 +241,21 @@ figure.driver-image {
         
     }
 
+    /* Modal de Coviértete en conductor */
+
+    .mod-driver {
+        background-color: #a5a5a1;
+        width: 80%;
+    }
+
+    .btn-driver {
+        background-color: #42b2df;
+        border: none;
+        color: #fff;
+        text-transform: uppercase;
+        width: 100%;
+    }
+
 
 
 
@@ -467,6 +482,7 @@ figure.driver-image {
     .btn-flex button {
         border: none;
         background-color: #42b2df;
+        color: #fff;
         text-transform: uppercase;
     }
     
