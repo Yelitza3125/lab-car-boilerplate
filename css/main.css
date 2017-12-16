@@ -234,7 +234,7 @@ figure.driver-image {
         background-color: #0f9e97;
     }
 
-    form {
+    .fr-log-in {
         background-color: #fff;
         width: 70%;
         padding-top: 1em;
@@ -434,6 +434,40 @@ figure.driver-image {
 
     /* Modal de regístrate */
 
-    
+    .mod-register {
+        background-color: #969695;
+        width: 80%;
+    }
 
+    .btn-mod-register {
+        margin-bottom: 1em;
+        background-color: #000;
+        color: #fff;
+        border: none;
+    }
+
+    .mod-register p {
+        text-transform: uppercase;
+    }
+    
+    .fr-inf input {
+        margin-bottom: 1em;
+    }
+
+    .btn-select {
+        padding: 0.5em 6em;
+        background-color: #c2c2c0;       
+    }
+
+    div.btn-flex {
+        display: flex;
+        justify-content: center;
+        
+    }
+    .btn-flex button {
+        border: none;
+        background-color: #42b2df;
+        text-transform: uppercase;
+    }
+    
 }

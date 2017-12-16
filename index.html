@@ -57,7 +57,7 @@
                     <img src="assets/images/user.png" alt="usuario" class="img-rounded img-responsive">
                 </div>
                 <div class="modal-body mod-log-in">
-                    <form role="form">
+                    <form role="form" class="fr-log-in">
                         <div class="mod-log-in"> 
                             <div class="form-group col-lg-6">
                                 <label class="sr-only" for="exampleInputAmount">Username</label>
@@ -104,7 +104,7 @@
                             <h4 class="travel">Viaja con
                                 <img src="assets/images/logoBlanco.png">
                             </h4>
-                            <button class="btn btn-default btn-sm" type="submit">REGÍSTRATE</button>
+                            <button class="btn btn-default btn-sm" type="submit" data-toggle="modal" data-target="#register">REGÍSTRATE</button>
                         </div>
 
                         <!--Contenedor de "o bien" -->
@@ -130,6 +130,69 @@
             </div>
         </div>        
     </section>
+
+
+    <!--Modal regístrate -->
+
+   <div class="modal fade" id="register" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content mod-register">                
+                <div class="modal-body mod-log-in">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        <button class="btn btn-default btn-mod-register" type="submit">¿Ya tienes una cuenta?</button>
+                        <p> o crea una cuenta nueva </p>
+
+                        <!--Formulario del modal-->
+                        <form role="form" class="fr-register">
+                            
+                            <div class=""> 
+                                <div class="form-group form-inline">
+                                    <label for="exampleInputName2" class="sr-only">Nombre</label>
+                                    <input type="text" class="form-control" placeholder="Nombre">
+                                    <label for="exampleInputName2" class="sr-only">Apellido</label>
+                                    <input type="text" class="form-control" placeholder="Apellido">
+                                </div>
+
+                                <div class="form-group fr-inf">
+                                    <label for="exampleInputName2" class="sr-only">Correo electrónico</label>
+                                    <input type="text" class="form-control" placeholder="Correo electrónico: ejemplo@correo.mx">
+                                    <label for="exampleInputName2" class="sr-only">Teléfono</label>
+                                    <input type="text" class="form-control" placeholder="Teléfono">
+                                    <label for="exampleInputName2" class="sr-only">Contraseña</label>
+                                    <input type="text" class="form-control" placeholder="Contraseña">
+                                    <label for="exampleInputName2" class="sr-only">Ciudad</label>
+                                    <input type="text" class="form-control" placeholder="Ciudad">
+                                    <label for="exampleInputName2" class="sr-only">Código de invitación</label>
+                                    <input type="text" class="form-control" placeholder="(Opcional) Código de invitación">
+
+                                    <!-- Botón con opciones-->
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-default dropdown-toggle btn-select" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            ¿Cómo te enteraste de nosotros? <span class="caret"></span>
+                                        </button>
+                                        <ul class="dropdown-menu">  
+                                            <li> <input class= "btn-check" type="radio" aria-label="..."> Redes Sociales </li>
+                                            <li> <input class= "btn-check"  class= "btn-check" type="radio" aria-label="..."> Familiares</li>
+                                            <li> <input class= "btn-check" type="radio" aria-label="..."> Prensa escrita</li>
+                                            <li> <input class= "btn-check" type="radio" aria-label="..."> Televisión</li>
+                                            <li role="separator" class="divider"></li>
+                                            <li> <input class= "btn-check" type="radio" aria-label="..."> Otro</li>
+                                        </ul>
+                                    </div>                                   
+                                </div>
+
+                                <!--Botón de enviar la información-->
+                                <div class="btn-flex">
+                                    <button class="btn btn-default" type="submit">Enviar</button>
+                                </div>                           
+                            </div>                       
+                        </form>
+                </div>         
+            </div>
+        </div>
+    </div>
 
    <!--Sección app -->
    <section class="app center-block clearfix">
@@ -158,6 +221,8 @@
            </div>
        </div>
    </section>
+
+   
 
    <!-- Sección driver -->
    <section class="become-driver center-block clearfix">
