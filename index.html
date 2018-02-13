@@ -2,96 +2,93 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
-    <!--Importanto font-awesome-->
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <!--Importando bootstrap -->
-    <link type="text/css" rel="stylesheet" href="vendors/bootstrap/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="css/main.css">
-    <title>Lab-Car</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!--Importanto font-awesome-->
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <!--Importando bootstrap -->
+  <link type="text/css" rel="stylesheet" href="vendors/bootstrap/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/main.css">
+  <title>Lab-Car</title>
 </head>
 <body>
+  <!--Sección menú de navegación -->
+  <nav>
+    <div class="display-flex-row mg-top-3em">
+      <div class="row">
+        <!-- El menu hamburguesa en el modelo responsive-->
+        <div class="navbar-header display-flex-row  colx-xs-12">
+          <button type="button" class="navbar-toggle pull-left" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+            <span class="sr-only">Desplegar navegación</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
 
-    <!--Sección menú de navegación -->
-    <nav>
-        <div class="container">
-            <div class="row">
-                  <!-- El menu hamburguesa en el modelo responsive-->
-                <div class="navbar-header nav-flex col-xs-offset-1 colx-xs-11">
-                    <button type="button" class="navbar-toggle pull-left" data-toggle="collapse"
-                        data-target=".navbar-ex1-collapse">
-                        <span class="sr-only">Desplegar navegación</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-
-                    <!-- El logotipo -->
-                    <a class="navbar-brand" href="#"> <img class="lab-logo"  src="assets/images/logoForma.png" alt="logotipo"></a>
-                </div>
-     
-             <!-- Opciones del menú -->
-                <div class="collapse navbar-collapse navbar-ex1-collapse"> 
-                     <ul class="nav navbar-nav navbar-right">
-                        <li><a href="#">Viaja</a></li>
-                        <li><a href="#">Conduce</a></li>
-                        <li><a href="#" data-toggle="modal" data-target="#log-in">Inicia sesión</a></li>                      
-                    </ul>
-                </div>
-            </div>
+          <!-- El logotipo -->
+           <img class="lab-logo"  src="assets/images/logoForma.png" alt="logotipo">
         </div>
-    </nav>  
-
-    <!--Modal de iniciar sesión-->
-
-    <div class="modal fade" id="log-in" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header mod-log-in">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                    <img src="assets/images/user.png" alt="usuario" class="img-rounded img-responsive">
-                </div>
-                <div class="modal-body mod-log-in">
-                    <form role="form" class="fr-log-in">
-                        <div class="mod-log-in"> 
-                            <div class="form-group col-lg-6">
-                                <label class="sr-only" for="exampleInputAmount">Username</label>
-                                <div class="input-group">
-                                    <div class="input-group-addon">
-                                        <i class="fa fa-user" aria-hidden="true"></i>
-                                    </div>
-                                    <input type="text" class="form-control" id="exampleInputAmount" placeholder="Username">
-                                </div>
-                            </div>
-                            <div class="form-group col-lg-6">
-                                <label class="sr-only" for="exampleInputAmount">Contraseña</label>
-                                <div class="input-group">
-                                    <div class="input-group-addon">
-                                        <i class="fa fa-lock" aria-hidden="true"></i>
-                                    </div>
-                                    <input type="text" class="form-control" id="exampleInputAmount" placeholder="Password">
-                                </div>                        
-                            </div>
-                        </div>
-                        <div class="mod-log-in">
-                            <button type="submit" class="btn btn-default loging">LOGING</button>
-                            <p>Forgot password? <a href="#">Click here</a></p>                               
-                        </div>
-                    </form>
-                </div>         
-            </div>
+         
+        <!-- Opciones del menú -->
+        <div class="collapse navbar-collapse navbar-ex1-collapse"> 
+          <ul class="nav navbar-nav navbar-right display-flex-row mg-top-1em">
+            <li><a href="#">Viaja</a></li>
+            <li><a href="#">Conduce</a></li>
+            <li><a href="#" data-toggle="modal" data-target="#log-in">Inicia sesión</a></li>      
+          </ul>
         </div>
+      </div>
     </div>
+  </nav>  
+
+  <!--Modal de iniciar sesión-->
+
+  <div class="modal fade" id="log-in" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header mod-log-in">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <img src="assets/images/user.png" alt="usuario" class="img-rounded img-responsive">
+        </div>
+        <div class="modal-body mod-log-in">
+          <form role="form" class="fr-log-in">
+            <div class="mod-log-in"> 
+              <div class="form-group col-lg-6">
+                <label class="sr-only" for="exampleInputAmount">Username</label>
+                <div class="input-group">
+                  <div class="input-group-addon">
+                    <i class="fa fa-user" aria-hidden="true"></i>
+                  </div>
+                  <input type="text" class="form-control" id="exampleInputAmount" placeholder="Username">
+                </div>
+              </div>
+              <div class="form-group col-lg-6">
+                <label class="sr-only" for="exampleInputAmount">Contraseña</label>
+                <div class="input-group">
+                  <div class="input-group-addon">
+                    <i class="fa fa-lock" aria-hidden="true"></i>
+                  </div>
+                  <input type="text" class="form-control" id="exampleInputAmount" placeholder="Password">
+                </div>                        
+              </div>
+            </div>
+            <div class="mod-log-in">
+              <button type="submit" class="btn btn-default loging">LOGING</button>
+              <p>Forgot password? <a href="#">Click here</a></p>
+            </div>
+          </form>
+        </div>         
+      </div>
+    </div>
+  </div>
 
     <!--Sección hero -->
     <section class="taxi-container" >
-        <div class="container-fluid taxi-image">
-            <div class="row">               
+      <div class="container-fluid taxi-image">
+        <div class="row">               
                 <figure class="center-block">
                     <div class="container-content col-xs-9 col-lg-offset-8 col-lg-4">
                     
