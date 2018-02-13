@@ -33,6 +33,10 @@
     align-items: center;
 }
 
+.color-white {
+    color: #fff;
+}
+
 /*Sección menú */
 
 /*Estilo del menu hamburguesa*/
@@ -60,10 +64,6 @@
 
 /*Sección hero*/
 
-.taxi-container{
-    margin-top: 2em;
-}
-
 .taxi-image figure {
     width: 100%;
     height: 100vh;
@@ -76,19 +76,15 @@
 
 .container-content { 
     background-color: #ffa914;
-    color: #fff;
     display: flex;
     flex-wrap: wrap;
     align-items: flex-end;   
 }
 
-.container-content h1   {
+.mg-bottom   {
     margin-bottom: 10%; 
 }
 
-.container-content button {
-    margin-bottom: 10%;
-}
 
 .container-content h1 img {
     width: 12vh;
@@ -107,8 +103,6 @@ section.app {
     justify-content: left;
     flex-wrap: wrap;
     align-items: flex-start;
-    color: #fff;
-    
 }
 
 .iphone-content {
@@ -116,7 +110,6 @@ section.app {
     justify-content: center;
     flex-wrap: wrap;
     margin-top: 6em;
-    color: #fff;
     border: 1px solid #fff;
     padding: 2em;
 }
@@ -149,7 +142,6 @@ figure.driver-image {
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    color: #fff;  
 }
 
 .driver-content h4 {
@@ -159,7 +151,6 @@ figure.driver-image {
 .driver-content button {
   padding: 1em 1.5em;
   background: #ffa914;
-  color: #fff;
   border: none;
 }
 
@@ -290,7 +281,7 @@ figure.driver-image {
     /*Estilo de la imagen en desktop*/
 
     .taxi-container{
-        margin-top: 40px;
+        margin-top: 3em;
     }
 
     .taxi-image figure {
@@ -453,14 +444,13 @@ figure.driver-image {
     }
 
     .footer-content .hr-1 {
-    width: 83%;
+        width: 83%;
     }   
 
     .footer-menu {
         display:flex;
         justify-content: center;
         align-items: flex-end;  
-    
     }
 
     .footer-icons .logo-store {
@@ -501,11 +491,11 @@ figure.driver-image {
         justify-content: center;
         
     }
+
     .btn-flex button {
         border: none;
         background-color: #42b2df;
         color: #fff;
         text-transform: uppercase;
-    }
-    
+    }   
 }
