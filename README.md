@@ -1,10 +1,14 @@
-# Proyecto: Lab Car
+# LabCar
 
-![LabCar](assets/images/layout.jpg)
+Aplicación de servicio de taxi por dispositivos móbiles.
+Maquetación de un layout responsive mediante el uso del framework Bootstrap.
 
-![LabCarMobile](assets/images/layout2.jpg)
+![LabCar](https://user-images.githubusercontent.com/32287220/36371614-a6e84178-1530-11e8-922d-cd931e67fe2c.jpg)
 
-![LabCarModal](assets/images/modal.jpg)
+## Desarrollado para 
+
+[Laboratoria](http://laboratoria.la)
+
 
 ## Descripción del Proyecto.
 
@@ -43,5 +47,3 @@ Además por medio de JQuery se han desarrollado la funcionalidad de algunos boto
 2. CSS3
 
 3. Bootstrap
-
-4. jQuery

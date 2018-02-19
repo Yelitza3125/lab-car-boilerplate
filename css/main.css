@@ -37,6 +37,12 @@
     color: #fff;
 }
 
+.btn {
+    border: none;
+    background-color: #fff;
+}
+
+
 /*Sección menú */
 
 /*Estilo del menu hamburguesa*/
@@ -57,7 +63,7 @@
 
 .navbar-right li a {
     color: #000;
-    font-size: 1.5em;
+    font-size: 1em;
 }
 
 
@@ -218,6 +224,11 @@ figure.driver-image {
     margin-bottom: 2em;
 }
 
+.li-hover:hover {
+    color:#ffa914;
+    cursor: pointer;
+}
+
  /*MODALES*/
 
     /*Modal de iniciar sesión */
@@ -274,8 +285,10 @@ figure.driver-image {
 /* Media query para dektop */
 @media screen and (min-width: 769px) {
    
-    .row {
+    .row-nav {
         display: flex;
+        width: 100%;
+        justify-content: space-between;
     }
 
     /*Estilo de la imagen en desktop*/
